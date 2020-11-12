@@ -2,33 +2,33 @@
         <footer>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-sm-4 col-md-3 text-left item">
-                        <h3 >Страховки</h3>
-                        <div class="row">
-                            <div class="col">
-                                <ul>
-                                    <li><a href="../Strahovky/Osago1.php">Осаго</a></li>
-                                    <li><a href="../Strahovky/kaskO.php">Каско</a></li>
-                                    <li><a href="../Strahovky/property.php">Имущество</a></li>
-                                </ul>
-                            </div>
-                            <div class="col" style="margin: -17px;padding: 17px;">
-                                <ul>
-                                    <li><a href="../Strahovky/life.php">Жизнь</a></li>
-                                    <li><a href="../Strahovky/DMSOMS.php">ДМС</a></li>
-                                    <li><a href="../Strahovky/other.php">Частный случай</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-4 col-md-3 item">
-                        <h3>Информация</h3>
-                        <ul>
-                            <li><a href="../Communication/aboutUs.php">О компании</a></li>
-                            <li><a href="../Communication/contacts.php">Контакты</a></li>
-                            <li><a href="../Communication/reviews.php">Отзывы</a></li>
-                        </ul>
-                    </div>
+                	<div class="col-sm-4 col-md-3 text-left item">
+					    <h3 class="text-center">Страховки</h3>
+					    <div class="row">
+					        <div class="col text-center">
+					            <ul>
+					                <li><a href="#">Осаго</a></li>
+					                <li><a href="#">Каско</a></li>
+					                <li><a href="#">Имущество</a></li>
+					            </ul>
+					        </div>
+					        <div class="col text-center">
+					            <ul>
+					                <li><a href="#">Жизнь</a></li>
+					                <li><a href="#">ДМС</a></li>
+					                <li><a href="#">Частный случай</a></li>
+					            </ul>
+					        </div>
+					    </div>
+					</div>
+                    <div class="col-sm-4 col-md-3 text-center item">
+					    <h3>Информация</h3>
+					    <ul>
+					        <li><a href="#">О компании</a></li>
+					        <li><a href="#">Вопросы</a></li>
+					        <li><a href="#">Техподдержка</a></li>
+					    </ul>
+					</div>
                     <div class="col-sm-4 col-md-3 item">
                         <h3>Форум</h3>
                         <ul>
