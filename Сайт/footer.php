@@ -38,7 +38,7 @@
                         </ul>
                     </div>
                     <div class="col-lg-3 item social" style="width: -138px;padding: 0px;"><a class="text-center" href="https://vk.com/insperru"><i class="fab fa-vk"></i></a>
-                        <p class="copyright">Copyright © 2020</p>
+                        <p class="copyright">InsperWeb © 2020</p>
                     </div>
                 </div>
             </div>

@@ -65,7 +65,7 @@ require '../header.php';
             ?>
             <div class="form-group"><input class="form-control" type="text" name="name_o" value="<?= $_SESSION['logged_user']->name ?? '' ?>" placeholder="ФИО"></div>
             <div class="form-group"><input class="form-control" type="tel" placeholder="Номер телефона" name="phone_o" value='<?= $_SESSION['logged_user']->phone ?? '' ?>'></div>
-            <div class="form-group"><input class="form-control is-invalid" type="email" name="email_o" value="<?= $_SESSION['logged_user']->email ?? '' ?>" placeholder="Email"><small class="form-text text-danger">Пожалуйста введите корректный адрес электронной почты</small></div>
+            <div class="form-group"><input class="form-control" type="email" name="email_o" value="<?= $_SESSION['logged_user']->email ?? '' ?>" placeholder="Email"><!-- <small class="form-text text-danger">Пожалуйста введите корректный адрес электронной почты</small> --></div>
             <div class="form-group"><textarea class="form-control" name="message_o" value="<?= $_POST['message_o'] ?? '' ?>" placeholder="Опишите свой случай" rows="14"></textarea></div>
             <div class="form-group"><button class="btn btn-primary" name= 'enter_o' type="submit">Отправить</button></div>
         </form>

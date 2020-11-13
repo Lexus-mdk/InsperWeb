@@ -49,7 +49,9 @@ if (isset($data['sign_up']))
             $user->password = password_hash($data['password'], PASSWORD_DEFAULT);
             $user->role = 'user';
             $user->dor = date("d/m/Y");
+            $user->cash = 0;
             R::store($user);
+
             header('Location: login.php');
 
         }

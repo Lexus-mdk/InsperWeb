@@ -64,7 +64,7 @@ if (isset($data['enter_k']))
             <div class="form-group"><input class="form-control" type="text" name="name_k" value="<?= $_SESSION['logged_user']->name ?? '' ?>" placeholder="ФИО"></div>
             <div class="form-group"><input class="form-control" type="text" name="car_k" value="<?= $_POST['car_k'] ?? '' ?>" placeholder="Номер ТС"></div>
             <div class="form-group"><input class="form-control" type="tel" placeholder="Номер телефона" name="phone_k" value='<?= $_SESSION['logged_user']->phone ?? '' ?>'></div>
-            <div class="form-group"><input class="form-control is-invalid" type="email" name="email_k" value="<?= $_SESSION['logged_user']->email ?? '' ?>" placeholder="Email"><small class="form-text text-danger">Пожалуйста введите корректный адрес электронной почты<br></small></div>
+            <div class="form-group"><input class="form-control" type="email" name="email_k" value="<?= $_SESSION['logged_user']->email ?? '' ?>" placeholder="Email"><!-- <small class="form-text text-danger">Пожалуйста введите корректный адрес электронной почты<br></small> --></div>
             <div class="form-group"><textarea class="form-control" name="message_k" value="<?= $_POST['message_k'] ?? '' ?>" placeholder="Опишите свой случай" rows="14"></textarea></div>
             <div class="form-group"><button  name="enter_k" class="btn btn-primary" type="submit">Отправить</button></div>
         </form>

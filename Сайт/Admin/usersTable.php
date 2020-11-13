@@ -60,8 +60,9 @@ if (isset($data['do_delete']))
 
     if (empty($errors)) 
     {
-        $id->role='deleted';
-        R::store($id);
+        // $id->role='deleted';
+        // R::store($id);
+        R::trash($id);
     }
 }
 
