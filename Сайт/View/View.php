@@ -1,7 +1,4 @@
 <?php
-
-// Проба ООП (ничего не получилось, файл забракован)
-
 namespace View;
 
 class View
@@ -16,7 +13,7 @@ class View
 	public function Reg ()
 	{
 		if ($this->what == 'true') {
-			include '../User/login.php';
+			include '../User/logIn.php';
 		}else{
 			echo '<div style="color: red;">'. array_shift($this->what).'</div><hr>';
 			include '../User/registration.php';

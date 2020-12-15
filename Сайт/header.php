@@ -148,15 +148,14 @@
 
     <nav class="navbar navbar-light navbar-expand-md border rounded-0 navigation-clean-button">
         <div class="container"><a class="navbar-brand" href="../First/firstpage.php" style="font-size: 29px;">Insper</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-            <div
-                class="collapse navbar-collapse" id="navcol-1">
+            <div class="collapse navbar-collapse" id="navcol-1" >
                 <ul class="nav navbar-nav mr-auto">
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#" style="color: rgb(70,87,101);">Страхование</a>
                         <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="../Strahovky/Osago1.php">ОСАГО</a><a class="dropdown-item" role="presentation" href="../Strahovky/kaskO.php">КАСКО</a><a class="dropdown-item" role="presentation" href="../Strahovky/property.php">Имущество</a>
                             <a
                                 class="dropdown-item" role="presentation" href="../Strahovky/DMSOMS.php">ДМС/ОМС</a><a class="dropdown-item" role="presentation" href="../Strahovky/life.php">Жизнь</a><a class="dropdown-item" role="presentation" href="../Strahovky/other.php">Частный случай</a></div>
                     </li>
-                    <li class="nav-item" role="presentation"><a class="nav-link" href="../Communication/news.php">Новости</a></li>
+                    <!-- <li class="nav-item" role="presentation"><a class="nav-link" href="../Communication/news.php">Новости</a></li> -->
                     <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false" href="#">Обратная связь</a>
                         <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="../Communication/reviews.php">Отзывы</a><a class="dropdown-item" role="presentation" href="../Communication/asks.php">Вопросы</a><a class="dropdown-item" role="presentation" href="../Communication/consultation.php">Консультация</a></div>
                     </li>
@@ -164,7 +163,7 @@
                     <li class="nav-item" role="presentation"><a class="nav-link" href="../Communication/aboutUs.php">О нас</a></li>
                 </ul>
                 <?php if ($_SESSION ['logged_user']->role == 'user') : ?>
-                <div class="dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false"><span class="d-none d-lg-inline mr-2 text-gray-600 small" style="font-size: 20px;"><?=$_SESSION['logged_user']->nick ?></span></a>
+                <div class="dropdown no-arrow"><a class="dropdown-toggle nav-link" data-toggle="dropdown" aria-expanded="false"><span class="d-lg-inline mr-2 text-gray-600 small" style="font-size: 20px;"><?=$_SESSION['logged_user']->nick ?></span></a>
                     <div class="dropdown-menu shadow dropdown-menu-right animated--grow-in"
                         role="menu"><a class="dropdown-item" role="presentation" href="../User/profile.php"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Профиль</a><a class="dropdown-item" role="presentation" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>&nbsp;Заявки</a>
                         <!-- <a

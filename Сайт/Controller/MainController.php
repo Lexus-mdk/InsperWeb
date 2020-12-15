@@ -1,8 +1,4 @@
 <?php
-require '../db/db.php';
-
-// Проба ООП (ничего не получилось, файл забракован)
-
 namespace Controller;
 
 use Model\Registration;
@@ -21,6 +17,7 @@ class MainController
 	{
 		$data = $_POST;
 		$errors = array();
+		require '../db/db.php';
 
 	    if (trim ($data['nick']) == '')
 	    {
@@ -52,12 +49,12 @@ class MainController
 
 	    if (empty ($errors))
 	    {
-	    	$model = new Model($data['nick'], $data['name'], $data['phone'], $data['email'], $data['password']);
+	    	$model = new Registration($data['nick'], $data['name'], $data['phone'], $data['email'], $data['password']);
 			$model->Reg();
 	    }else
 	    {
 	        $view = new View($errors);
-	        $view->Reg ();
+	        $view->Reg();
 	    }
 			
 	}

@@ -175,11 +175,13 @@ require '../header.php'; ?>
                                 </strong>
                             </span>
                         </div>
-
+                        <? if($_SESSION['logged_user']->verif == 1):?>
                     <form method="post" >
                         <div class="form-group"><button name="cash" class="btn btn-primary btn-sm" type="submit">Получить</button></div>
                     </form>
-                    <? endif; ?>
+                    <? 
+                        endif;
+                        endif; ?>
                     </div>
 
                 </div>

@@ -3,6 +3,12 @@ require '../db/db.php';
 
 // Регистрация на сайте
 
+
+function gen_token() {
+    $bytes = openssl_random_pseudo_bytes(20, $cstrong);
+    return bin2hex($bytes); 
+}
+
 $data = $_POST;
 if (isset($data['sign_up']))
 {
@@ -39,7 +45,7 @@ if (isset($data['sign_up']))
 
         if (empty ($errors))
         {
-            R::freeze (true);
+            /*R::freeze (true);*/
 
             $user = R::dispense('users');
             $user->nick = $data['nick'];
@@ -49,10 +55,12 @@ if (isset($data['sign_up']))
             $user->password = password_hash($data['password'], PASSWORD_DEFAULT);
             $user->role = 'user';
             $user->dor = date("d/m/Y");
+            $user->token = gen_token();
+            $user->verif = 0;
             $user->cash = 0;
             R::store($user);
 
-            header('Location: login.php');
+            header('Location: logIn.php');
 
         }
 }
@@ -130,6 +138,7 @@ if (isset($data['sign_up']))
                     echo '<br>' . '<div style="color: red;">'. array_shift($errors).'</div>';
                 }
                 ?>
+                
                 <div class="form-row">
                     <div class="col">
                         <div class="form-group"><input class="form-control" type="email" name="email" value="<?= $_POST['email'] ?? '' ?>" placeholder="Email"></div>

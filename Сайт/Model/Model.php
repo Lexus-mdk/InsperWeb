@@ -1,8 +1,4 @@
 <?php
-require '../db/db.php';
-
-// Проба ООП (ничего не получилось, файл забракован)
-
 namespace Model;
 
 use View\View;
@@ -30,7 +26,7 @@ class Registration
 
 	public function Reg()
 	{
-
+		require '../db/db.php';
         $user = R::dispense('users');
         $user->nick = $this->nick;
         $user->name = $this->name;
